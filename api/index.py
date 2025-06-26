@@ -4,7 +4,7 @@ import sqlite3
 send_from_directory = Flask.send_static_file
 import os
 
-app = Flask(__name__, template_folder=os.path.dirname(__file__))
+app = Flask(__name__,  template_folder="templates")
 DB_PATH = 'database.db'
 
 def init_db():
